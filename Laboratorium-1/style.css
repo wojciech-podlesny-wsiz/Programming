@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+
+h4 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 5px;
+  background-color: #28a745; 
+  border-radius: 2px;
+}
+
+
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px;
+}
+
+.nav h1 {
+  font-size: 24px;
+  color: #5b88c4;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.nav-list li a.active {
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 120px;
+  background-color: #fff;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-text .highlight {
+  color: #5b88c4;
+}
+
+.hero-text a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.hero-img {
+  width: 45%;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+
+
+article {
+  position: relative;
+  padding: 150px 120px;
+  padding: 0 120px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article-element {
+  width: 50%;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+  font-size: 16px;
+}
+
+
+#seriale h4,
+#ksiazki h4 {
+  font-style: italic;
+  text-decoration: underline;
+}
