@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja strona</title>
+</head>
+<body>
+
+<!-- Zadanie 1 & 2 -->
+<h1>O mnie</h1>
+<div>
+  <p><b>Imię:</b> Jan</p>
+  <p><i>Wykształcenie:</i></p>
+</div>
+<hr>
+
+<!-- Zadanie 3 & 4 -->
+<h2>Zainteresowania</h2>
+<ul>
+  <li><a href="https://pl.wikipedia.org/wiki/Programowanie">Programowanie</a></li>
+  <li><a href="https://pl.wikipedia.org/wiki/Muzyka">Muzyka</a></li>
+</ul>
+
+<h3>Ulubione seriale</h3>
+<ol>
+  <li><a href="https://www.filmweb.pl/serial/Breaking+Bad-2008-429392">Breaking Bad</a></li>
+  <li><a href="https://www.filmweb.pl/serial/Dark-2017-780402">Dark</a></li>
+</ol>
+
+<!-- Zadanie 5 -->
+<h2>Wykształcenie</h2>
+<table>
+  <tr><td>2011 – obecnie</td><td>WSIZ</td></tr>
+  <tr><td>2008 – 2011</td><td>Liceum ogólnokształcące nr 2</td></tr>
+  <tr><td>2002 – 2008</td><td>Szkoła podstawowa nr 5</td></tr>
+</table>
+
+<!-- Zadanie 6 -->
+<h2>Moje zdjęcie</h2>
+<img src="https://via.placeholder.com/200" alt="Moje zdjęcie" />
+
+<!-- Zadanie 7 -->
+<h2>Formularz kontaktowy</h2>
+<form action="" method="get">
+  <label>Imię:</label>
+  <input type="text" name="imie" /><br>
+  <label>Email:</label>
+  <input type="email" name="email" /><br>
+  <input type="submit" value="Wyślij" />
+</form>
+
+<!-- Zadanie 8 -->
+<script>
+let x = 10, y = 5;
+if(x > y){
+    alert("Witaj Świecie!");
+}
+</script>
+
+<!-- Zadanie 9 -->
+<script>
+var wiek = 20;
+if (wiek > 18) {
+    document.write("<b>Treść dostępna wyłącznie dla pełnoletnich!</b><br>");
+}
+</script>
+
+<!-- Zadanie 10 -->
+<script>
+var ksiazka = prompt("Podaj nazwę przedmiotu");
+if (ksiazka === "historia") {
+    document.write("<b>Książka do historii</b><br>");
+} else if (ksiazka === "matematyka") {
+    document.write("<b>Książka do matematyki</b><br>");
+} else if (ksiazka === "biologia") {
+    document.write("<b>Podręcznik do biologii</b><br>");
+} else {
+    document.write("<b>Nieznana książka</b><br>");
+}
+</script>
+
+<!-- Zadanie 11 -->
+<script>
+var jeden = prompt("Wprowadź pierwszą liczbę:");
+var dwa = prompt("Wprowadź drugą liczbę:");
+jeden = parseInt(jeden);
+dwa = parseInt(dwa);
+if (jeden === dwa) {
+    document.write(jeden + " jest równe " + dwa + "<br>");
+} else if (jeden < dwa) {
+    document.write(jeden + " jest mniejsze niż " + dwa + "<br>");
+} else {
+    document.write(jeden + " jest większe niż " + dwa + "<br>");
+}
+</script>
+
+<!-- Zadanie 12 -->
+<script>
+var a = parseInt(prompt("Wprowadź liczbę całkowitą"));
+if (a % 2 === 0) {
+    document.write(a + " jest liczbą parzystą<br>");
+} else {
+    document.write(a + " jest liczbą nieparzystą<br>");
+}
+</script>
+
+<!-- Zadanie 13 -->
+<script>
+let tablica = [];
+for (let i = 0; i < 10; i++) {
+    tablica[i] = parseInt(prompt("Wprowadź liczbę " + (i + 1)));
+}
+document.write("Wprowadzone liczby: " + tablica.join(", ") + "<br>");
+let szukana = parseInt(prompt("Podaj liczbę do wyszukania:"));
+let licznik = 0;
+for (let i = 0; i < tablica.length; i++) {
+    if (tablica[i] === szukana) licznik++;
+}
+document.write("Liczba " + szukana + " została znaleziona " + licznik + " razy.<br>");
+</script>
+
+<!-- Zadanie 14 -->
+<script>
+let tab = [1, 2, 3, 4, 5, 6];
+let nowa = parseInt(prompt("Podaj liczbę do wstawienia:"));
+let indeks = parseInt(prompt("Podaj indeks (0-5):"));
+tab.splice(indeks, 0, nowa);
+document.write("Nowa tablica: " + tab.join(", ") + "<br>");
+</script>
+
+<!-- Zadanie 15 -->
+<script>
+let tekst = prompt("Podaj ciąg znaków do odwrócenia:");
+let odwrocony = tekst.split("").reverse().join("");
+document.write("Odwrócony ciąg: " + odwrocony + "<br>");
+</script>
+
+<!-- Zadanie 16 -->
+<script>
+function losujLiczby(ile) {
+    let liczby = [];
+    for (let i = 0; i < ile; i++) {
+        liczby.push(Math.floor(Math.random() * 100));
+    }
+    return liczby;
+}
+let wylosowane = losujLiczby(10);
+document.write("Wylosowane liczby: " + wylosowane.join(", "));
+</script>
+
+</body>
+</html>
